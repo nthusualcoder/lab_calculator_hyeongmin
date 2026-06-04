@@ -403,8 +403,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cells = parseFloat(hemoCellsInput.value) || 0;
     const stockVolume = parseFloat(hemoVolumeInput.value) || 0;
 
-    // cell concentration per mL = cells * 2 * 10^4 = cells * 20000
-    const density = cells * 20000;
+    // cell concentration per mL = cells * 10^4 = cells * 10000
+    const density = cells * 10000;
     const totalCells = density * stockVolume;
 
     const resDensityEl = document.getElementById('hemo-res-density');
@@ -510,8 +510,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cellsCount = parseFloat(inputSphHemoCells.value) || 0;
     const vCurrent = parseFloat(inputSphCurrentVol.value) || 0;
 
-    // Stock concentration: C_current = cellsCount * 20000 cells/mL
-    const cCurrent = cellsCount * 20000;
+    // Stock concentration: C_current = cellsCount * 10000 cells/mL
+    const cCurrent = cellsCount * 10000;
     const nTotal = cCurrent * vCurrent;
 
     // Display stock density and total cells

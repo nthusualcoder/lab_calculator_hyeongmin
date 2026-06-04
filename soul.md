@@ -46,7 +46,7 @@
 
 ### 3.2. Hemocytometer 세포 카운팅 계산기
 - **세포 농도 계산 공식**:
-  - 16칸 전체 측정 기준: $C_{cell} = N \times 2 \times 10^4 \text{ cells/mL}$
+  - 16칸 전체 측정 기준: $C_{cell} = N \times 10^4 \text{ cells/mL}$
 - **하위 기능 2.1: 필요한 세포 수 수확 (Harvest)**:
   - $V_{harvest} = \frac{T_{target}}{C_{cell}} \times 1000\ \mu\text{L}$
 - **하위 기능 2.2: 특정 세포 농도/부피 제조 (Dilution)**:
@@ -57,7 +57,7 @@
 일정량의 세포 현탁액(Stock)을 이용해 스페로이드를 배양하기 위한 현탁 희석액 조제법 계산.
 
 1. **원액 세포 농도 ($C_{current}$)**:
-   $$C_{current} = \text{총 카운팅 세포 수 (16칸 전체)} \times 20,000\ \text{cells/mL}$$
+   $$C_{current} = \text{총 카운팅 세포 수 (16칸 전체)} \times 10,000\ \text{cells/mL}$$
    - **보유 총 세포 수 ($N_{total}$)**:
      $$N_{total} = C_{current} \times V_{current}\ (\text{현재 현탁액 부피 (mL)})$$
 
