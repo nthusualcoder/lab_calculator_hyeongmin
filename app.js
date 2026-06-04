@@ -627,9 +627,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnResetFormSph) {
     btnResetFormSph.addEventListener('click', () => {
       if (inputSphHemoCells) inputSphHemoCells.value = "100";
-      if (inputSphCurrentVol) inputSphCurrentVol.value = "1.0";
+      if (inputSphCurrentVol) inputSphCurrentVol.value = "15.0";
       if (inputSphNewVol) inputSphNewVol.value = "1.0";
-      if (inputSphPlateWells) inputSphPlateWells.value = "24";
+      if (inputSphPlateWells) inputSphPlateWells.value = "1";
       if (inputSphMicrowells) inputSphMicrowells.value = "1200";
       if (inputSphCellsPerMicro) inputSphCellsPerMicro.value = "200";
       if (inputSphFinalVol) inputSphFinalVol.value = "1.0";
